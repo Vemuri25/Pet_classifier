@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train (quick CPU run)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.train",
+      "args": ["--limit", "400", "--epochs", "2", "--num_workers", "0"],
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "Train (full)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.train",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Evaluate",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.evaluate",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run API",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["serving.app:app", "--reload", "--port", "8000"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

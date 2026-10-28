@@ -1,0 +1,12 @@
+.venv/
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# keep artifacts/*.png and metrics.json for the README; track model.pt with git-lfs
+
+# Experimental model checkpoints
+artifacts/model_baseline.pt
+artifacts/model_v1_90pct.pt
+artifacts/model_v2_augmented.pt

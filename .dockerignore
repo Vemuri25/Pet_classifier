@@ -1,0 +1,9 @@
+.venv
+data
+__pycache__
+*.pyc
+.git
+.pytest_cache
+tests
+artifacts/*.png
+artifacts/*.json
