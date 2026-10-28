@@ -74,6 +74,14 @@ def run_epoch(
     training = optimizer is not None
     model.train(training)
 
+    # During the head-only phase, keep the frozen backbone in eval mode
+    # so BatchNorm running statistics are not updated.
+    if training:
+        for module in model.modules():
+            if isinstance(module, nn.modules.batchnorm._BatchNorm):
+                if not any(p.requires_grad for p in module.parameters()):
+                    module.eval()
+
     total_loss = 0.0
     correct = 0
     total = 0
