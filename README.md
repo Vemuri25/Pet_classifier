@@ -1,4 +1,34 @@
-# Pet Breed Classifier
+# Stanford Dogs Breed Classifier
+
+<escape>🚀 **Live Demo:** [Try the Stanford Dogs Classifier](https://petclassifier-zgg5u5pnnfprkygz6ipu8f.streamlit.app/)</escape>
+
+A deep-learning image classification application that identifies 120 dog breeds using EfficientNet-B0 transfer learning.
+
+## Model Performance
+
+- Test Accuracy: 82.03%
+- Macro F1-Score: 81.56%
+- Number of Classes: 120
+
+## Technology Stack
+
+- Python
+- PyTorch
+- Torchvision
+- EfficientNet-B0
+- Streamlit
+- Stanford Dogs Dataset
+
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+## Live Application
+
+https://petclassifier-zgg5u5pnnfprkygz6ipu8f.streamlit.app/# Pet Breed Classifier
 
 A PyTorch computer-vision project that classifies images into **37 cat and dog breeds** using transfer learning with **EfficientNet-B0**. The model is served through a **FastAPI** application with a browser-based upload interface and top-5 predictions.
 
