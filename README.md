@@ -1,4 +1,4 @@
-# Stanford Dogs Breed Classifier
+https://petclassifier-zgg5u5pnffprkygz6ipu8f.streamlit.app/# Stanford Dogs Breed Classifier
 
 A deep learning application that classifies images into **120 dog breeds** using transfer learning with **EfficientNet-B0** and PyTorch.
 
